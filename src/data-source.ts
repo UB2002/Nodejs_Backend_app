@@ -6,7 +6,8 @@ import { Country } from "./entity/Country"; // Import the Country entity
 
 export const AppDataSource = new DataSource({
     type: "postgres",
-    url: "postgresql://admin:kGaAYE6Tk6krNK70DNU9Ioovggscn1bE@dpg-cra78tbv2p9s73bnghag-a/airport_db_g29h",//"postgresql://admin:kGaAYE6Tk6krNK70DNU9Ioovggscn1bE@dpg-cra78tbv2p9s73bnghag-a.oregon-postgres.render.com/airport_db_g29h",
+    //url: "postgresql://admin:kGaAYE6Tk6krNK70DNU9Ioovggscn1bE@dpg-cra78tbv2p9s73bnghag-a/airport_db_g29h",
+    url: "postgresql://admin:kGaAYE6Tk6krNK70DNU9Ioovggscn1bE@dpg-cra78tbv2p9s73bnghag-a.oregon-postgres.render.com/airport_db_g29h",
     synchronize: false, // Set to false in production to avoid accidental data loss
     logging: false,
     entities: [Airport, City, Country],
