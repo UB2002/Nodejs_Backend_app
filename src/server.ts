@@ -9,7 +9,7 @@ const app = express();
 
 AppDataSource.initialize().then(async () => {
   console.log('Data Source has been initialized!');
-  app.get('helo', (req,res)=>{
+  app.get('/helo', (req,res)=>{
     res.send("hello from render")
   });
 
