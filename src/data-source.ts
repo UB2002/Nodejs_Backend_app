@@ -12,9 +12,9 @@ export const AppDataSource = new DataSource({
     entities: [Airport, City, Country],
     migrations: [],
     subscribers: [],
-    extra: {
-        connectionTimeoutMillis: 30000, // 30 seconds
-    },
+    //extra: {
+    //    connectionTimeoutMillis: 30000, // 30 seconds
+    //},
     ssl: {
         rejectUnauthorized: false, // Disable certificate validation if needed
     },
