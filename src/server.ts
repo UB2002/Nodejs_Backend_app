@@ -9,7 +9,9 @@ const app = express();
 
 AppDataSource.initialize().then(async () => {
   console.log('Data Source has been initialized!');
-  
+  app.get('helo', (req,res)=>{
+    res.send("hello from render")
+  });
 
   app.get('/airport', async (req, res) => {
     const iata_code = req.query.iata_code as string;
